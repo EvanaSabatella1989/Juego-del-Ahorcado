@@ -1,0 +1,74 @@
+*{
+    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter" sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+  }
+
+.logo{
+    margin: 50px auto;
+    display: inline;
+  }
+
+  .contenedor-botones{
+      /* border: 2px solid red; */
+      /* display: flex; */
+      width: 300px;
+      /* align-items: center; */
+      text-align: center;
+      margin: auto;
+      
+
+  }
+
+  .btnIniciar{
+      background: blue;
+      color: white;
+      padding: 10px;
+      margin:20px;
+      border-radius: 10px;
+      
+      /* display: block; */
+  }
+
+  .btnAgregar{
+    background: #e5e5e5c4;
+    color: blue;
+    padding: 10px;
+    margin:20px;
+    border-radius: 10px;
+    /* display: block; */
+  }
+
+  .ingresar-palabra{
+      margin-left: 100px;
+      margin-bottom: 200px;
+  }
+
+  p{
+      font-size: 16px;
+      text-align: center;
+
+  }
+
+  .botones{
+    border: 2px solid red;
+    /* display: flex; */
+    /* width: 1000px; */
+    /* align-items: center; */
+    text-align: center;
+    margin: auto;
+    
+
+}
+
+.btnCancelar{
+    background: #e5e5e5c4;
+    color: blue;
+    padding: 10px;
+    margin:20px;
+    border-radius: 10px;
+}
