@@ -21,42 +21,47 @@ document.querySelector("#output").innerHTML = palabraConGuiones;
 document.querySelector("#calcular").addEventListener("click",() => 
 {
     var letra = document.querySelector("#letra").value.toUpperCase();
-    // var contadorFallos = 0;
+    
     let haFallado = true;
-    
-    for(const i in palabra){
-        if(letra == palabra[i]){
-            // alert("exito");
-            palabraConGuiones = palabraConGuiones.replaceAt(i*2,letra);
-            haFallado = false;
-        }
-    
-    }
+    if(letra != ""){
+        for(const i in palabra){
+            if(letra == palabra[i]){
+                // alert("exito");
+                palabraConGuiones = palabraConGuiones.replaceAt(i*2,letra);
+                haFallado = false;
+            }
         
-    if(haFallado){
-        // contadorFallos++;
-        // dibujarHorca();
-        if(!letrasErradas.includes(letra.toUpperCase())){
-            contadorFallos++;
-            dibujarHorca();
-            letrasErradas.push(letra.toUpperCase());
-            var li = document.createElement("li");
-            li.textContent = letra;
-            li.innerHTML = letra;
-            lista.appendChild(li);
+        }
+        if(haFallado){
+            // contadorFallos++;
+            // dibujarHorca();
+            if(!letrasErradas.includes(letra.toUpperCase())){
+                contadorFallos++;
+                dibujarHorca();
+                letrasErradas.push(letra.toUpperCase());
+                var li = document.createElement("li");
+                li.textContent = letra;
+                li.innerHTML = letra;
+                lista.appendChild(li);
+            }else{
+                alert("Letra repetida");
+            }
+           
         }else{
-            alert("Letra repetida");
+            if(palabraConGuiones.indexOf("_")< 0){
+                document.querySelector("#ganador").style.display = 'flex';
+            }
         }
        
+        document.querySelector("#output").innerHTML = palabraConGuiones;
+        document.querySelector("#letra").value = '';
+        document.querySelector("#letra").focus();
     }else{
-        if(palabraConGuiones.indexOf("_")< 0){
-            document.querySelector("#ganador").style.display = 'flex';
-        }
+        alert("Debe ingresar una letra")
     }
-   
-    document.querySelector("#output").innerHTML = palabraConGuiones;
-    document.querySelector("#letra").value = '';
-    document.querySelector("#letra").focus();
+    
+        
+    
 
    
 

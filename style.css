@@ -1,5 +1,5 @@
 *{
-    background: #E5E5E5;
+   
     box-sizing: border-box;
   }
 
@@ -8,18 +8,27 @@
     display: inline;
   }
 
-main{
+.jugar{
     display: flex;
     flex-direction:row;
+    text-align: center;
 
 }
+.ahorcado{
+    display:block;
+    margin:auto;
+    text-align: center;
+    font-size: 3em;
+    color: #0A3871;
+}
+
 #canvas{
     display: block;
     margin: 50px 10px;
    
     
 }
-#letra, #output, #letrasErradas,.calcular{
+#letra, #output, #letrasErradas,.calcular, .palabraParaAgregar{
     font-size: 25px;
 }
 #output{
@@ -76,7 +85,7 @@ main{
 
 }
 .btnAzul{
-    background: blue;
+    background:#0A3871;
     color: white;
     padding: 10px;
     margin:20px;
@@ -88,7 +97,7 @@ main{
 
 .btnGris{
   background: #e5e5e5c4;
-  color: blue;
+  color: #0A3871;
   padding: 10px;
   margin:20px;
   border-radius: 10px;
@@ -101,6 +110,9 @@ main{
     margin: 50px 10px;
     
 }
+/* .palabraParaAgregar{
+    font-size: 25px;
+} */
 
 .agregar{
     /* border: 2px solid red; */
