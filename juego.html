@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img src="imagenes/Logo.png" alt="" class="logo">
+    </header>
+    <main>
+        <canvas id="canvas" width="600" height="400" style="border: 2px solid black;"></canvas>
+        <div class="contenedor">
+            <input type="text" id="letra" maxlength="1">
+            <button id="calcular" class="calcular">Calcular</button>
+            <p id="output"></p>
+            <ul id="letrasErradas"></ul>
+            <div class="contenedor-botones">
+                <button id="btn-nueva-jugada" class="btnAzul">Nuevo Juego</button>
+                <button id="btn-me-rindo" class="btnGris">Me rindo</button>
+            </div>
+            <div id="ganador">
+                <p class="victoria">Victoria!!!</p>
+                <a href="juego.html" class="btnAzul">Volver a Jugar</a>
+                <a href="index.html" class="btnGris">Inicio</a>
+            </div>
+            <div id="perdedor">
+                <p class="derrota">Game Over</p>
+                <a href="juego.html" class="btnAzul">Volver a Jugar</a>
+                <a href="index.html" class="btnGris">Inicio</a>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="agregar.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

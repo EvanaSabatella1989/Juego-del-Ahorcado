@@ -1,74 +1,113 @@
 *{
     background: #E5E5E5;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter" sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
+    box-sizing: border-box;
   }
 
-.logo{
-    margin: 50px auto;
+  .logo{
+    margin: 10px auto;
     display: inline;
   }
 
-  .contenedor-botones{
-      /* border: 2px solid red; */
-      /* display: flex; */
-      width: 300px;
-      /* align-items: center; */
-      text-align: center;
-      margin: auto;
-      
+main{
+    display: flex;
+    flex-direction:row;
 
-  }
-
-  .btnIniciar{
-      background: blue;
-      color: white;
-      padding: 10px;
-      margin:20px;
-      border-radius: 10px;
-      
-      /* display: block; */
-  }
-
-  .btnAgregar{
-    background: #e5e5e5c4;
-    color: blue;
-    padding: 10px;
-    margin:20px;
-    border-radius: 10px;
-    /* display: block; */
-  }
-
-  .ingresar-palabra{
-      margin-left: 100px;
-      margin-bottom: 200px;
-  }
-
-  p{
-      font-size: 16px;
-      text-align: center;
-
-  }
-
-  .botones{
-    border: 2px solid red;
-    /* display: flex; */
-    /* width: 1000px; */
-    /* align-items: center; */
-    text-align: center;
-    margin: auto;
+}
+#canvas{
+    display: block;
+    margin: 50px 10px;
+   
     
+}
+#letra, #output, #letrasErradas,.calcular{
+    font-size: 25px;
+}
+#output{
+    font-size: 25px;
+    text-align: center;
+}
+
+#letrasErradas{
+    /* border: 2px solid red; */
+    /* font-size: 25px; */
+    text-decoration: none;
+    text-align: center;
 
 }
 
-.btnCancelar{
-    background: #e5e5e5c4;
-    color: blue;
+#letrasErradas li{
+    display:inline;
+    padding-left:3px;
+    padding-right:3px;
+    margin-left: 10px;
+    color: red;
+}
+
+#ganador, #perdedor{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.victoria, .derrota{
+    font-size: 5rem;
+}
+
+.contenedor-botones{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    font-size: 20px;
+    
+    
+
+}
+.btnAzul{
+    background: blue;
+    color: white;
     padding: 10px;
     margin:20px;
     border-radius: 10px;
+    text-decoration: none;
+
+
+}
+
+.btnGris{
+  background: #e5e5e5c4;
+  color: blue;
+  padding: 10px;
+  margin:20px;
+  border-radius: 10px;
+  text-decoration: none;
+  
+}
+.contenedor{
+    /* border: 2px solid red; */
+    font-size: 20px;
+    margin: 50px 10px;
+    
+}
+
+.agregar{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    padding: 10px;
 }
