@@ -1,4 +1,4 @@
-// import {palabras} from "agregar.js"
+
 String.prototype.replaceAt = function(index, character){return this.substr(0, index) + character + this.substr(index+character.length);}
 
 
@@ -6,7 +6,7 @@ palabrasSecretas = ["HTML", "JAVASCRIPT", "CSS", "GIT", "PYTHON", "ANGULAR", "MY
 localStorage.setItem("palabrasSecretas", JSON.stringify(palabrasSecretas)); 
 palabrasSecretasAlmacenadas = JSON.parse(localStorage.getItem("palabrasSecretas"));
 var palabra = palabrasSecretasAlmacenadas[Math.floor(Math.random()*palabrasSecretas.length)];
-// console.log(palabrasSecretasAlmacenadas)
+console.log(palabrasSecretasAlmacenadas)
 var contadorFallos = 0;
 
 var letrasErradas = [];
